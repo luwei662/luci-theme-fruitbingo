@@ -38,11 +38,11 @@ developed after this version is stable.
 
 ### Adding FruitBingo to your own LEDE/OpenWRT Build
 
-编辑 feeds.conf.default and add the following to it（vi /feeds.conf.default）:
+编辑 feeds.conf.default and add the following to it（vi feeds.conf.default）:
 
 ```
-# luci-theme-infinityfreedom
-src-git fruitbingo https://github.com/realJustinLee/luci-theme-fruitbingo.git
+# luci-theme-frutbingo
+src-git fruitbingo https://github.com/luwei662/luci-theme-fruitbingo.git
 ```
 
 更新feeds，并安装主题：
