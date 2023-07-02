@@ -54,11 +54,11 @@ src-git fruitbingo https://github.com/realJustinLee/luci-theme-fruitbingo.git
 打开配置菜单：
 
     make menuconfig
-找到 LuCI -> Themes, 选择 luci-theme-infinityfreedom, 保存后退出
+找到 LuCI -> Themes, 选择 luci-theme-fruitbingo, 保存后退出
 
 单独编译ipk命令：
 
-    make package/luci-theme-lumao/compile V=99
+    make package/luci-theme-fruitbingo/compile V=99
 主题默认会自动启用，如果没有启动可以手动开启。
 
 ScreenShots
