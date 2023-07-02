@@ -38,27 +38,28 @@ developed after this version is stable.
 
 ### Adding FruitBingo to your own LEDE/OpenWRT Build
 
-Edit your feeds.conf.default and add the following to it:
+编辑 feeds.conf.default and add the following to it（vi /feeds.conf.default）:
 
 ```
 # luci-theme-infinityfreedom
 src-git fruitbingo https://github.com/realJustinLee/luci-theme-fruitbingo.git
 ```
 
-Update your build environment and install the package:
+更新feeds，并安装主题：
 
 ```shell
 ./scripts/feeds update -a && ./scripts/feeds install -a
-make menuconfig -j
 ```
 
-Go to LuCI -> Themes, select luci-theme-fruitbingo, exit, save and build as usual.
+打开配置菜单：
 
-Enable the Theme
-----------------
+    make menuconfig
+找到 LuCI -> Themes, 选择 luci-theme-infinityfreedom, 保存后退出
 
-* Go to System -> System -> Language and Style
-* Choose 'fruitbingo' in the Design checkbox
+单独编译ipk命令：
+
+    make package/luci-theme-lumao/compile V=99
+主题默认会自动启用，如果没有启动可以手动开启。
 
 ScreenShots
 ----------------
